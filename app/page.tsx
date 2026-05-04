@@ -116,7 +116,6 @@ export default function MeltInWebsite() {
       <header className="flex items-center justify-between px-8 py-6 border-b border-amber-200">
         <h1 className="text-2xl font-bold flex items-center gap-2 text-amber-900">
           <img src="/Meltin_logo.png" width={50} height={50} alt="logo" />
-          Melt In
         </h1>
         <nav className="flex gap-6 text-sm text-amber-900">
           <a href="#menu" className="hover:text-amber-600">
