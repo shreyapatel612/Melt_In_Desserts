@@ -135,7 +135,7 @@ export default function MeltInWebsite() {
 
       <section className="text-center bg-[url('/background.jpg')] bg-cover bg-center py-30 px-4">
         <h2 className="text-5xl font-bold mb-6 text-amber-900 text-center">
-          The Art of Melting Desserts.
+          Melt In Desserts.
         </h2>
         <p className="text-white-700 font-bold max-w-xl mx-auto mb-8">
           Warm Brownies. Cold Scoops. Perfect Melt.
