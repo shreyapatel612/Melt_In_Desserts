@@ -235,14 +235,12 @@ export default function MeltInWebsite() {
           <div className="flex items-center gap-2">
             <MapPin size={18} /> 615 Queen St, Toronto, ON M5V 2B6
           </div>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <Clock size={18} />{' '}
             <span>
               12:30 PM - 09:00 PM Weekdays & 12:30 PM - 10:30 PM Weekends
             </span>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center gap-10 text-gray-700">
+          </div> */}
           <div className="flex items-center gap-2">
             <ContactIcon size={18} /> <span>+1 (437) 329-0612</span>
           </div>
