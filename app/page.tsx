@@ -65,16 +65,16 @@ const menu: MenuType = {
   ],
   Sundaes: [
     {
-      name: 'Chocolate Ice Cream Sundae',
-      desc: 'Rich chocolate ice cream topped with chocolate sauce.',
+      name: 'Chocolate Brownie Sundae',
+      desc: 'Rich chocolate with ice cream topped with chocolate sauce.',
     },
     {
-      name: 'Caramel Ice Cream Sundae',
-      desc: 'Creamy ice cream topped with a drizzle of caramel sauce.',
+      name: 'Caramel Brownie Sundae',
+      desc: 'Rich brownie with ice cream topped with a drizzle of caramel sauce.',
     },
     {
-      name: 'Pistachio Ice Cream Sundae',
-      desc: 'Smooth pistachio ice cream topped with pistachio nuts.',
+      name: 'Pistachio Brownie Sundae',
+      desc: 'Smooth pistachio Brownie with ice cream topped with pistachio nuts.',
     },
   ],
   Cookies: [
@@ -104,7 +104,7 @@ const menu: MenuType = {
     { name: 'Coconut Flakes' },
     { name: 'Oreo Crumbles' },
     { name: 'Pistachios' },
-    { name: 'Chopped Nuts' },
+    { name: 'Sliced Almonds' },
   ],
 };
 
