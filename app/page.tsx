@@ -116,6 +116,7 @@ export default function MeltInWebsite() {
       <header className="flex items-center justify-between px-8 py-6 border-b border-amber-200">
         <h1 className="text-2xl font-bold flex items-center gap-2 text-amber-900">
           <img src="/Meltin_logo.png" width={50} height={50} alt="logo" />
+          Melt In
         </h1>
         <nav className="flex gap-6 text-sm text-amber-900">
           <a href="#menu" className="hover:text-amber-600">
@@ -135,7 +136,7 @@ export default function MeltInWebsite() {
 
       <section className="text-center bg-[url('/background.jpg')] bg-cover bg-center py-30 px-4">
         <h2 className="text-5xl font-bold mb-6 text-amber-900 text-center">
-          Melt In Desserts.
+          The Art of Melting Desserts.
         </h2>
         <p className="text-white-700 font-bold max-w-xl mx-auto mb-8">
           Warm Brownies. Cold Scoops. Perfect Melt.
