@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { IceCream, MapPin, Clock } from 'lucide-react';
+import { IceCream, MapPin, Clock, ContactIcon, Instagram } from 'lucide-react';
 import { useState } from 'react';
 
 type MenuItem = {
@@ -240,6 +240,14 @@ export default function MeltInWebsite() {
             <span>
               12:30 PM - 09:00 PM Weekdays & 12:30 PM - 10:30 PM Weekends
             </span>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center gap-10 text-gray-700">
+          <div className="flex items-center gap-2">
+            <ContactIcon size={18} /> <span>+1 (437) 329-0612</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Instagram size={18} /> meltin.ca
           </div>
         </div>
       </section>
