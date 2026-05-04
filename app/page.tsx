@@ -7,7 +7,6 @@ import { useState } from 'react';
 
 type MenuItem = {
   name: string;
-  price: string;
   desc?: string;
 };
 
@@ -17,37 +16,95 @@ type MenuType = {
 
 const menu: MenuType = {
   'Ice Cream': [
-    { name: 'Classic Vanilla', price: '$4', desc: 'Madagascar vanilla bean.' },
     {
-      name: 'Chocolate Fudge',
-      price: '$4.5',
-      desc: 'Rich chocolate with fudge.',
+      name: 'Vanilla',
+      desc: 'Classic vanilla ice cream made with real vanilla beans.',
     },
-    { name: 'Cookie & Cream', price: '$4.5' },
-    { name: 'Strawberry', price: '$4.5' },
+    {
+      name: 'Dutch Chocolate',
+      desc: 'Rich chocolate ice cream with a deep cocoa flavor.',
+    },
+    {
+      name: 'Strawberry & Cream',
+      desc: 'Fresh strawberries blended in.',
+    },
+    {
+      name: 'Maple Walnut',
+      desc: 'Maple ice cream with crunchy walnut pieces',
+    },
+    {
+      name: 'Cotton Candy',
+      desc: 'Sweet cotton candy flavored ice cream',
+    },
+    {
+      name: 'Espresso Flake',
+      desc: 'Coffee flavoured ice cream with chocolatey espresso flakes',
+    },
+    {
+      name: 'Pistachio & Almond',
+      desc: 'Pistachio flavoured ice cream with almond pieces',
+    },
+    {
+      name: 'Sorbet Rainbow',
+      desc: 'Orange, Raspberry and Lime sorbet',
+    },
   ],
   Brownies: [
-    { name: 'Classic Brownie', price: '$4' },
-    { name: 'Walnut Brownie', price: '$4.5' },
-    { name: 'Fudge Brownie', price: '$5' },
-  ],
-  Cookies: [
-    { name: 'Chocolate Chip', price: '$3' },
-    { name: 'Double Chocolate', price: '$3.5' },
+    {
+      name: 'Classic Brownie',
+      desc: 'A rich, fudgy brownie with a crispy top.',
+    },
+    {
+      name: 'Walnut Brownie',
+      desc: 'Brownie infused with crunchy walnuts.',
+    },
+    {
+      name: 'Pistachio Brownie',
+      desc: 'Brownie with a hint of pistachio flavor.',
+    },
   ],
   Sundaes: [
-    { name: 'Hot Fudge Sundae', price: '$9' },
-    { name: 'Brownie Blast', price: '$10' },
+    {
+      name: 'Chocolate Ice Cream Sundae',
+      desc: 'Rich chocolate ice cream topped with chocolate sauce.',
+    },
+    {
+      name: 'Caramel Ice Cream Sundae',
+      desc: 'Creamy ice cream topped with a drizzle of caramel sauce.',
+    },
+    {
+      name: 'Pistachio Ice Cream Sundae',
+      desc: 'Smooth pistachio ice cream topped with pistachio nuts.',
+    },
   ],
+  Cookies: [
+    {
+      name: 'Chocolate Chunk',
+      desc: 'A rich, fudgy cookie with chunks of real chocolate.',
+    },
+    {
+      name: 'White Chocolate with Nuts',
+      desc: 'Delicious white chocolate cookies studded with nuts.',
+    },
+    {
+      name: 'Triple Chocolate',
+      desc: 'A chocolate lover’s dream with three types of chocolate.',
+    },
+  ],
+
   Sauces: [
-    { name: 'Caremal', price: '' },
-    { name: 'Chocolate', price: '' },
-    { name: 'Maple', price: '' },
+    { name: 'Caramel' },
+    { name: 'Chocolate' },
+    { name: 'Maple Syrup' },
+    { name: 'Pistachio' },
   ],
   Toppings: [
-    { name: 'Chocolate Chips', price: '$0.75' },
-    { name: 'Crushed Peanuts', price: '$0.75' },
-    { name: 'Rainbow Sprinkles', price: '$1' },
+    { name: 'Chocolate Chips' },
+    { name: 'Rainbow Sprinkles' },
+    { name: 'Coconut Flakes' },
+    { name: 'Oreo Crumbles' },
+    { name: 'Pistachios' },
+    { name: 'Chopped Nuts' },
   ],
 };
 
@@ -58,8 +115,8 @@ export default function MeltInWebsite() {
     <div className="min-h-screen bg-white text-black">
       <header className="flex items-center justify-between px-8 py-6 border-b border-amber-200">
         <h1 className="text-2xl font-bold flex items-center gap-2 text-amber-900">
-          <img src="/Meltin_logo_2.png" width={50} height={50} alt="logo" />{' '}
-          Melt In
+          <img src="/Meltin_logo.png" width={70} height={70} alt="logo" />
+          Melt In Desserts
         </h1>
         <nav className="flex gap-6 text-sm text-amber-900">
           <a href="#menu" className="hover:text-amber-600">
@@ -77,14 +134,22 @@ export default function MeltInWebsite() {
         </nav>
       </header>
 
-      <section className="text-center py-24 px-6">
-        <h2 className="text-5xl font-bold mb-6 text-amber-900">
-          Artisan Ice Cream
+      <section className="text-center bg-[url('/background.jpg')] bg-cover bg-center py-30 px-4">
+        <h2 className="text-5xl font-bold mb-6 text-amber-900 text-center">
+          The Art of Melting Desserts.
         </h2>
-        <p className="text-gray-700 max-w-xl mx-auto mb-8">
+        <p className="text-white-700 font-bold max-w-xl mx-auto mb-8">
           Warm Brownies. Cold Scoops. Perfect Melt.
         </p>
-        <Button className="text-lg px-6 py-5 bg-amber-900 hover:bg-amber-700 text-white">
+        <Button
+          className="text-lg px-6 py-5 bg-amber-900 hover:bg-amber-700 text-white"
+          onClick={() => {
+            const menuSection = document.getElementById('menu');
+            if (menuSection) {
+              menuSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+        >
           Explore Menu
         </Button>
       </section>
@@ -129,11 +194,11 @@ export default function MeltInWebsite() {
                   )}
                 </div>
 
-                <div className="mt-4 text-right">
+                {/* <div className="mt-4 text-right">
                   <span className="text-lg font-bold text-amber-900">
                     {item.price}
                   </span>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           ))}
@@ -168,10 +233,13 @@ export default function MeltInWebsite() {
         <h2 className="text-3xl font-bold mb-8 text-amber-900">Visit Us</h2>
         <div className="flex flex-col md:flex-row justify-center gap-10 text-gray-700">
           <div className="flex items-center gap-2">
-            <MapPin size={18} /> Mississauga, Canada
+            <MapPin size={18} /> 615 Queen St, Toronto, ON M5V 2B6
           </div>
           <div className="flex items-center gap-2">
-            <Clock size={18} /> 12PM – 10PM Daily
+            <Clock size={18} />{' '}
+            <span>
+              12:30 PM - 09:00 PM Weekdays & 12:30 PM - 10:30 PM Weekends
+            </span>
           </div>
         </div>
       </section>
