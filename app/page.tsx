@@ -233,7 +233,7 @@ export default function MeltInWebsite() {
         <h2 className="text-3xl font-bold mb-8 text-amber-900">Visit Us</h2>
         <div className="flex flex-col md:flex-row justify-center gap-10 text-gray-700">
           <div className="flex items-center gap-2">
-            <MapPin size={18} /> 615 Queen St, Toronto, ON M5V 2B6
+            <MapPin size={18} /> 615 Queen St W, Toronto, ON M5V 2B6
           </div>
           {/* <div className="flex items-center gap-2">
             <Clock size={18} />{' '}
