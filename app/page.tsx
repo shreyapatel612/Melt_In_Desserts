@@ -95,6 +95,7 @@ const menu: MenuType = {
   Sauces: [
     { name: 'Caramel' },
     { name: 'Chocolate' },
+    { name: 'White Chocolate' },
     { name: 'Maple Syrup' },
     { name: 'Pistachio' },
   ],
@@ -214,7 +215,7 @@ export default function MeltInWebsite() {
           <img className="rounded-2xl" src="Image1.avif" />
           <img className="rounded-2xl" src="Image2.avif" />
           <img className="rounded-2xl" src="Image3.jpg" />
-          <img className="rounded-2xl" src="Image4.avif" />
+          <img className="rounded-2xl" src="Image4.svg" />
         </div>
       </section>
 
