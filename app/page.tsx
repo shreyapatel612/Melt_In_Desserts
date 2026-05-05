@@ -223,9 +223,9 @@ export default function MeltInWebsite() {
           About Melt In
         </h2>
         <p className="text-gray-700 max-w-2xl mx-auto">
-          Melt In is a modern dessert shop focused on delicious flavors, premium
-          dairy, and unforgettable brownies and cookies. Every Bite is made
-          fresh and designed to melt perfectly.
+          Melt In Desserts is where rich flavors meet aesthetic experiences.
+          From creamy ice creams to indulgent brownies, every bite is crafted to
+          melt your mood.
         </p>
       </section>
 
