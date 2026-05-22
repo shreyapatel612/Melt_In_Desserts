@@ -167,7 +167,7 @@ export default function MeltInWebsite() {
         </h2>
 
         {/* Tabs */}
-        <div className="flex gap-3 overflow-x-auto pb-4 justify-center mb-10">
+        <div className="flex md:justify-center gap-3 overflow-x-auto whitespace-nowrap px-2 pb-4 scrollbar-hide">
           {categories.map((cat) => (
             <button
               key={cat}
