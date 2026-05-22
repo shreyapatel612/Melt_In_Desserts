@@ -22,7 +22,7 @@ type MenuType = {
 };
 
 const menu: MenuType = {
-  'Ice Cream': [
+  'Ice Creams': [
     {
       name: 'Vanilla',
       desc: 'Classic vanilla ice cream made with real vanilla beans.',
