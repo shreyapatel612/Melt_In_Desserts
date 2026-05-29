@@ -84,20 +84,20 @@ const menu: MenuType = {
       desc: 'Smooth pistachio Brownie with ice cream topped with pistachio nuts.',
     },
   ],
-  Cookies: [
-    {
-      name: 'Chocolate Chunk',
-      desc: 'A rich, fudgy cookie with chunks of real chocolate.',
-    },
-    {
-      name: 'White Chocolate with Nuts',
-      desc: 'Delicious white chocolate cookies studded with nuts.',
-    },
-    {
-      name: 'Triple Chocolate',
-      desc: 'A chocolate lover’s dream with three types of chocolate.',
-    },
-  ],
+  // Cookies: [
+  //   {
+  //     name: 'Chocolate Chunk',
+  //     desc: 'A rich, fudgy cookie with chunks of real chocolate.',
+  //   },
+  //   {
+  //     name: 'White Chocolate with Nuts',
+  //     desc: 'Delicious white chocolate cookies studded with nuts.',
+  //   },
+  //   {
+  //     name: 'Triple Chocolate',
+  //     desc: 'A chocolate lover’s dream with three types of chocolate.',
+  //   },
+  // ],
 
   Sauces: [
     { name: 'Caramel' },
